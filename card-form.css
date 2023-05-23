@@ -1,13 +1,13 @@
 body {
-    background-color:purple;
+    background-color: purple;
 }
 
 #form {
-    background-color:lightgray;
-   height: 500px;
-   width: 40%;
-   margin: 220px 30% 20px;
-   padding: 50px;
+    background-color: lightgray;
+    height: 500px;
+    width: 40%;
+    margin: 220px 30% 20px;
+    padding: 50px;
 
 }
 
@@ -26,14 +26,14 @@ label {
 }
 
 button {
-   background-color: goldenrod;
-   height: 3em;
-   width: 300px;
-   margin:100px;
-   color: #fff;
-  border-radius: 7px;
-  border-color: darkgoldenrod;
-  letter-spacing: 3px;
-  font-weight: 900;
-  cursor: pointer;
+    background-color: goldenrod;
+    height: 3em;
+    width: 300px;
+    margin: 100px;
+    color: #fff;
+    border-radius: 7px;
+    border-color: darkgoldenrod;
+    letter-spacing: 3px;
+    font-weight: 900;
+    cursor: pointer;
 }
