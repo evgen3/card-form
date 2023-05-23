@@ -11,14 +11,21 @@
 
 <body>
     <form id="form" action="" method="post">
-        <label>CARD NUMBER</label><br>
-        <input class="input" type="number"><br><br><br><br>
-        <label>CARD HOLDER (NAME ON CARD) </label><br>
-        <input class="input" type="text"><br><br><br><br>
-        <label>EXPIRE (VALID UNTIL)</label><br>
-        <input class="date" type="date"><br><br><br><br>
-        <button type="submit">SUBMIT</button>
-
+        <div>
+            <label>CARD NUMBER</label><br>
+            <input class="input" type="number">
+        </div>
+        <div>
+            <label>CARD HOLDER (NAME ON CARD) </label><br>
+            <input class="input" type="text">
+        </div>
+        <div>
+            <label>EXPIRE (VALID UNTIL)</label><br>
+            <input class="date" type="date">
+        </div>
+        <div class="action">
+            <button type="submit">SUBMIT</button>
+        </div>
 
     </form>
     <script src="card-form.js">
