@@ -25,7 +25,22 @@ label {
 
 .date {
     height: 2em;
-    width: 170px;
+    width: 75px;
+    max-width: 100%;
+}
+
+.ccv {
+    float: right;
+}
+
+#ccv {
+    float: right;
+    margin-right: 3em;
+}
+
+.ccv {
+    height: 2em;
+    width: 75px;
     max-width: 100%;
 }
 

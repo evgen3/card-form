@@ -10,18 +10,21 @@
 </head>
 
 <body>
-    <form id="form" action="" method="post">
+    <form id="form">
         <div>
             <label>CARD NUMBER</label><br>
-            <input class="input" type="number">
+            <input id="i-1" class="input" type="text">
         </div>
         <div>
             <label>CARD HOLDER (NAME ON CARD) </label><br>
-            <input class="input" type="text">
+            <input id="i-2" class="input" type="text">
         </div>
         <div>
-            <label>EXPIRE (VALID UNTIL)</label><br>
-            <input class="date" type="date">
+            <label>EXPIRE (VALID UNTIL)</label>
+            <label id="ccv">CCV</label><br>
+            <input id="i-3" class="date" type="number" placeholder="MM">
+            <input id="i-4" class="date" type="number" placeholder="YY">
+            <input id="i-5" class="ccv" type="number">
         </div>
         <div class="action">
             <button type="submit">SUBMIT</button>
