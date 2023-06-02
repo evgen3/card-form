@@ -19,13 +19,16 @@
             <label for="cardHolder">CARD HOLDER (NAME ON CARD) </label><br>
             <input id="cardHolder" name="cardHolder" class="input" type="text" required>
         </div>
-        <div class="div_expire">
-            <label for="month">EXPIRE (VALID UNTIL)</label>
-            <label for="cvv" class="label_cvv">CVV</label><br>
-        
-            <input id="month" name="month" class="date" type="number" placeholder="MM" required>
-            <input id="year" name="year" class="date" type="number" placeholder="YYYY" required>
-            <input id="cvv" name="cvv" class="input_cvv" type="number" required>
+        <div class="expire-cvv">
+            <div>
+                <label for="month">EXPIRE (VALID UNTIL)</label><br>
+                <input id="month" name="month" class="date" type="number" placeholder="MM" required>
+                <input id="year" name="year" class="date" type="number" placeholder="YYYY" required>
+            </div>
+            <div>
+                <label for="cvv" class="label_cvv">CVV</label><br>
+                <input id="cvv" name="cvv" class="input_cvv" type="number" required>
+            </div>
         </div>
         <div class="form-action">
             <button type="submit">SUBMIT</button>

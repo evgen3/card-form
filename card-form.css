@@ -23,22 +23,22 @@ label {
     width: 100%;
 }
 
+.expire-cvv {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
 .date {
     height: 2em;
     width: 75px;
     max-width: 100%;
 }
 
-.label_cvv {
-    float: right;
-    margin-right: 3em;
-}
-
 .input_cvv {
     height: 2em;
     width: 75px;
     max-width: 100%;
-    float: right;
 }
 
 button {
