@@ -4,7 +4,7 @@ body {
     justify-content: center;
 }
 
-#form {
+.form {
     background-color: lightgray;
     width: 40%;
     margin-top: 220px;
@@ -29,19 +29,16 @@ label {
     max-width: 100%;
 }
 
-.ccv {
-    float: right;
-}
-
-#ccv {
+.label_cvv {
     float: right;
     margin-right: 3em;
 }
 
-.ccv {
+.input_cvv {
     height: 2em;
     width: 75px;
     max-width: 100%;
+    float: right;
 }
 
 button {
@@ -55,9 +52,11 @@ button {
     letter-spacing: 3px;
     font-weight: 900;
     cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-.action {
+.form-action {
     display: flex;
     justify-content: center;
 }

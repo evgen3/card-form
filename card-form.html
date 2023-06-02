@@ -10,28 +10,29 @@
 </head>
 
 <body>
-    <form id="form">
+    <form class="form">
         <div>
-            <label>CARD NUMBER</label><br>
-            <input id="i-1" class="input" type="text">
+            <label for="cardNumber">CARD NUMBER</label><br>
+            <input id="cardNumber" name="cardNumber" class="input" type="number" maxlength="5" required>
         </div>
         <div>
-            <label>CARD HOLDER (NAME ON CARD) </label><br>
-            <input id="i-2" class="input" type="text">
+            <label for="cardHolder">CARD HOLDER (NAME ON CARD) </label><br>
+            <input id="cardHolder" name="cardHolder" class="input" type="text" required>
         </div>
-        <div>
-            <label>EXPIRE (VALID UNTIL)</label>
-            <label id="ccv">CCV</label><br>
-            <input id="i-3" class="date" type="number" placeholder="MM">
-            <input id="i-4" class="date" type="number" placeholder="YY">
-            <input id="i-5" class="ccv" type="number">
+        <div class="div_expire">
+            <label for="month">EXPIRE (VALID UNTIL)</label>
+            <label for="cvv" class="label_cvv">CVV</label><br>
+        
+            <input id="month" name="month" class="date" type="number" placeholder="MM" required>
+            <input id="year" name="year" class="date" type="number" placeholder="YYYY" required>
+            <input id="cvv" name="cvv" class="input_cvv" type="number" required>
         </div>
-        <div class="action">
+        <div class="form-action">
             <button type="submit">SUBMIT</button>
         </div>
 
     </form>
-    <script src="card-form.js">
+    <script src="card-form.js" defer>
     </script>
 </body>
 
