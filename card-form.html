@@ -21,21 +21,23 @@
             <input id="card-holder" name="cardHolder" class="input" type="text">
             <span id="error-card-holder" class="error-text"></span>
         </div>
-        <div class="expire-cvv">
-            <div>
-                <label for="month">EXPIRE (VALID UNTIL)</label><br>
-                <input id="month" name="month" class="date" type="number" placeholder="MM">
-                <input id="year" name="year" class="date" type="number" placeholder="YYYY">
-            </div>
-            <div>
-                <label for="cvv" class="label_cvv">CVV</label><br>
-                <input id="cvv" name="cvv" class="input-cvv" type="number">
-            </div>
-        </div>
         <div>
-            <span id="error-month" class="error-text"></span><br>
-            <span id="error-year" class="error-text"></span><br>
-            <span id="error-cvv" class="error-text"></span>
+            <div class="expire-cvv">
+                <div>
+                    <label for="month">EXPIRE (VALID UNTIL)</label><br>
+                    <input id="month" name="month" class="date" type="number" placeholder="MM">
+                    <input id="year" name="year" class="date" type="number" placeholder="YYYY">
+                </div>
+                <div>
+                    <label for="cvv" class="label-cvv">CVV</label><br>
+                    <input id="cvv" name="cvv" class="input-cvv" type="number">
+                </div>
+            </div>
+            <div>
+                <span id="error-month" class="error-text"></span><br>
+                <span id="error-year" class="error-text"></span><br>
+                <span id="error-cvv" class="error-text"></span>
+            </div>
         </div>
         <div class="form-action">
             <button id="submit" type="submit">SUBMIT</button>
