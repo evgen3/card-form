@@ -14,9 +14,6 @@ document.querySelector('form').addEventListener('submit', (event) => {
     const borderColorCardNumber = inputBorderColorCardNumber(cardNumber.value);
     cardNumber.style.borderColor = borderColorCardNumber;
 
-    document.querySelector('#card-number').addEventListener('click', (event) => {
-        errorCardNumber.innerText = '';
-    });
 
     const cardHolder = document.querySelector('#card-holder');
     const errorCardHolder = document.querySelector('#error-card-holder');
@@ -27,9 +24,7 @@ document.querySelector('form').addEventListener('submit', (event) => {
     const borderColorCardHolder = inputBorderColorCardHolder(cardHolder.value);
     cardHolder.style.borderColor = borderColorCardHolder;
 
-    document.querySelector('#card-holder').addEventListener('click', (event) => {
-        errorCardHolder.innerText = '';
-    });
+   
 
     const month = document.querySelector('#month');
     const errorMonth = document.querySelector('#error-month');
@@ -40,9 +35,7 @@ document.querySelector('form').addEventListener('submit', (event) => {
     const borderColorMonth = inputBorderColorMonth(month.value);
     month.style.borderColor = borderColorMonth;
 
-    document.querySelector('#month').addEventListener('click', (event) => {
-        errorMonth.innerText = '';
-    });
+    
 
     const year = document.querySelector('#year');
     const errorYear = document.querySelector('#error-year');
@@ -53,9 +46,7 @@ document.querySelector('form').addEventListener('submit', (event) => {
     const borderColorYear = inputBorderColorYear(year.value);
     year.style.borderColor = borderColorYear;
 
-    document.querySelector('#year').addEventListener('click', (event) => {
-        errorYear.innerText = '';
-    });
+    
 
     const cvv = document.querySelector('#cvv');
     const errorCvv = document.querySelector('#error-cvv');
@@ -66,9 +57,7 @@ document.querySelector('form').addEventListener('submit', (event) => {
     const borderColorCvv = inputBorderColorCvv(cvv.value);
     cvv.style.borderColor = borderColorCvv;
 
-    document.querySelector('#cvv').addEventListener('click', (event) => {
-        errorCvv.innerText = '';
-    });
+   
 
     if (cardNumberError === '' &&
         cardHolderError === '' &&
