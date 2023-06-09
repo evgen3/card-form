@@ -80,6 +80,18 @@ document.querySelector('form').addEventListener('submit', (event) => {
 
 });
 
+function removeErrorOnClick(inputId, spanId) {
+    document.querySelector(inputId).addEventListener('click', (event) => {
+        document.querySelector(spanId).innerText = '';
+    });
+}
+
+removeErrorOnClick('#card-number', '#error-card-number');
+removeErrorOnClick('#card-holder', '#error-card-holder');
+removeErrorOnClick('#month', '#error-month');
+removeErrorOnClick('#year', '#error-year');
+removeErrorOnClick('#cvv', '#error-cvv');
+
 function validateCardNumber(value) {
     if (value.length !== 16) {
         return 'Ошибка, должно быть 16 цифр!';
